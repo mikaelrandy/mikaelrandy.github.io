@@ -1,0 +1,38 @@
+# Site settings
+title: Mikael Randy
+description: 'Architecte web spécialisé PHP/Symfony'
+url: 'http://www.mikaelrandy.fr'
+baseurl: '/'
+google_analytics: 'UA-15210241-1'
+disqus_shortname: 'mikaelrandy'
+
+author:
+  name: 'Mikael Randy'
+  email: mikael.randy@gmail.com
+  twitter_username: mikaelrandy
+  github_username:  mikaelrandy
+  linkedin_username:  mikaelrandy
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:month/:title.html
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
