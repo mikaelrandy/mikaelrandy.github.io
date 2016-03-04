@@ -1,0 +1,74 @@
+h1 {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    font-weight: bold;
+}
+
+h2 {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+h3 {
+    padding-left: 2em;
+    font-size: 150%;
+    margin-bottom: 1em;
+}
+
+/**
+ * Experiences
+ */
+div.experience {
+    margin-bottom: 3em;
+}
+
+div.experience h3 {
+    font-weight: bold;
+}
+
+div.period {
+    text-align: right;
+    margin-top: 0.2em;
+    margin-bottom: 0.5em;
+    float: right;
+    width: 20%;
+    margin-left: 5px;
+    display: inline-block;
+    position: relative;
+    top: -2em;
+    font-size: 100%;
+    font-style: italic;
+}
+
+div.experience dt {
+    font-weight: bold;
+}
+
+div.experience dt ul,
+div.experience dt p {
+    font-weight: normal;
+}
+
+/**
+ * Conferences
+ */
+div.conferences h3 {
+    margin-top: 2em;
+    padding-left: 1em;
+    font-size: 120%;
+}
+
+/**
+ * Education
+ */
+div.education h3{
+    margin-top: 2em;
+    padding-left: 1em;
+    font-size: 120%;
+}
+
+div.education p {
+    font-style: italic;
+}
