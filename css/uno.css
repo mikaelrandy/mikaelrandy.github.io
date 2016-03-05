@@ -991,14 +991,14 @@ em {
 
 blockquote {
 	margin: 1em 0;
-	padding: 2em 0;
+	padding: 1em 0;
 	background: #f8f8f8;
 	border: 1px solid #eeeeee;
 	border-radius: 3px;
 	font-family: "Roboto Slab", serif;
 	font-weight: lighter;
 	font-style: italic;
-	font-size: 1.3em;
+	font-size: 1.1em;
 	text-align: center; }
 	blockquote p:last-child {
 		margin-bottom: 0; }
@@ -1039,6 +1039,10 @@ pre {
 		padding: 0;
 		background: none;
 		border: none; }
+
+pre.highlight {
+	color: #f8f8f8;
+}
 
 .date,
 .time,
