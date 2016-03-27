@@ -14,7 +14,7 @@ comments: true
 
 Comme vous le savez si vous passez régulièrement sur ce site, que [je viens de switcher pour utiliser MacOSX](/post/2010/05/22/Je-switche). Je suis donc dans une phase d'apprentissage, et de modifications de mes habitudes de Windowsien convaincu.
 
-Comme je gère quelques sites personnels (dont celui ci), je dispose de quelques comptes sur des serveurs distants. Jusque là, pour gérer ces connexions, j'utilisais l'excellent [Putty Connection Manager](http://puttycm.free.fr/cms/). Toutefois, depuis mon passage à Mac OS X, je n'avais pas trouvé de système équivalent me convenant.
+Comme je gère quelques sites personnels (dont celui ci), je dispose de quelques comptes sur des serveurs distants. Jusque là, pour gérer ces connexions, j'utilisais l'excellent [Putty Connection Manager](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html). Toutefois, depuis mon passage à Mac OS X, je n'avais pas trouvé de système équivalent me convenant.
 
 Tout d'abord, comme Mac OS X est basé sur un système Unix, je dispose d'un terminal, et je peux donc utiliser la commande suivante pour me connecter en ssh sur un serveur distant:
 
