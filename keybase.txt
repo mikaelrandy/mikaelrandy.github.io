@@ -1,0 +1,69 @@
+==================================================================
+https://keybase.io/mikaelrandy
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.mikaelrandy.fr
+  * I am mikaelrandy (https://keybase.io/mikaelrandy) on keybase.
+  * I have a public key with fingerprint 4E4D A7E1 1836 6EC5 F249  F5DC 485D 8A9A 24A7 0074
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01013c82ccb6e474628732bbd524bdbd1893224e108e7a1dc7c1cad61f82a5e29ee40a",
+            "fingerprint": "4e4da7e118366ec5f249f5dc485d8a9a24a70074",
+            "host": "keybase.io",
+            "key_id": "485d8a9a24a70074",
+            "kid": "01013c82ccb6e474628732bbd524bdbd1893224e108e7a1dc7c1cad61f82a5e29ee40a",
+            "uid": "1d9bc8f10bb5a648a836cbb09538fd19",
+            "username": "mikaelrandy"
+        },
+        "service": {
+            "hostname": "www.mikaelrandy.fr",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1460378435,
+    "expire_in": 157680000,
+    "prev": "a68a9b54f999124b0c50637afabb4b828a6456183ccb9a029437fcee89040e9e",
+    "seqno": 5,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.53
+Comment: https://keybase.io/crypto
+
+yMIrAnicrVJbSBVBGD7mBfOUpXAieqqFrMhkL7O7sycIoTCLNEO8dNHDzO6sLh7P
+HvesmqgIXqCQKBJ80AezyDQSKtNOUmDaBYo4JF3MIoQwogjJyrIgmxWDHnpsXoaZ
+//u+//u/mTsro10JUbt7p6aktvL7UQ9vd1W6CtydO2sZbGo1jLeWKSOLG/FrJGT7
+ygyN8TIsx3KCCnlVxRIBMpB4KAs8xprIA6xhjYOKwPOAcCwkMuI0VVY5FWkSp0Me
+iYRXCAEsYlIZ3QiUECtoGQGbygICNCQTjoOCJBFV1Hmg6KKmAihqECmIB0hmWRlQ
+YqkZchjUHEYhkmaY9I4efIv2/oH/z74rF+U4TcEq1DkWYxFJACLqW8WYVUQB6hqn
+OMAQsQKonFB0uVGGiN9CAZprfSpDC1WGSpxsnWGWQNXV1Wl/AdN0i4oELdM2VdNP
+66W2HfQ6dLsmuIgn2Lek5MNGQKN5UkIVsUKGGWC8HEWqtuFIc0BiBRkCQUxlyNGg
+YRGf4SBEWYIsXU4bUkUlkUSzwyLQFUXhaC6sKrKSICMdYQww5CEdVZToG9EUFcTy
+ChBkXSUEKixgiUIYZ7aKgMl4aScblVDJkFESQHalRZj60ZEjMa6oBFdc7DLnn7kS
+lq/+8/t60uNdd0tr51x5aAsTN5nj8XhejfX1v8c/hmduuQebv6a3Nu0ZyT+5/0H7
+urzvqyYym0cLO5JO5MRPzPpPH2hs3tWlt7mjanHWfDIeOJY0vW1HcZzyNl173VfU
+ONT08sNs+OPxS+0LCUkxocj1ajduuxj83PZoKwzn3px8E66/Gj8XfvakYLqbz5/a
+1DExPxRp2dxpFg0nrolVb2RbG7Myz88/vTewfuhnvwcU//p0qGVh7dlJLm/6VH8y
+6KrL4Ffl9lxpje4YT+zbmz3Y/njsRXd/yszctwLry+Fzw9fme9xDGzI0Urg9JcKE
+6moaVrwbH5hs0CueR2r29fqF5ssHz1wI/gYsH0lc
+=5NoO
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mikaelrandy
+
+==================================================================
+
