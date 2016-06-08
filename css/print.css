@@ -1,0 +1,12 @@
+span.btn-mobile-menu {
+    display: none;
+}
+
+div.panel-main__inner {
+    padding-top: 30px;
+}
+
+.user-image {
+    width: 100px;
+    height: 100px;
+}
