@@ -3,6 +3,10 @@
 
 /* Modifications */
 
+.post {
+  text-align: justify;
+}
+
 pre.highlight,
 .highlight pre {
   padding: 10px;
