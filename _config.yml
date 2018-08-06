@@ -1,7 +1,7 @@
 # Site settings
 title: Mikael Randy
 description: 'CTO - Architecte Web'
-url: 'http://www.mikaelrandy.fr'
+url: 'https://www.mikaelrandy.fr'
 baseurl: '/'
 google_analytics: 'UA-15210241-1'
 disqus_shortname: 'mikaelrandy'
