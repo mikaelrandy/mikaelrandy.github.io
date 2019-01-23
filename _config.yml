@@ -39,4 +39,4 @@ plugins:
   - jekyll-gist
   - jekyll-sitemap
 
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png', '.idea']
