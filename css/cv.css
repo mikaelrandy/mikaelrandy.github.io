@@ -12,7 +12,11 @@ h2 {
 h3 {
     padding-left: 2em;
     font-size: 150%;
-    margin-bottom: 1em;
+    margin-bottom: 0.2em;
+}
+
+h4 {
+    padding-left: 2em;
 }
 
 /**
@@ -20,9 +24,15 @@ h3 {
  */
 div.experience {
     margin-bottom: 3em;
+    padding-left: 1em;
+    border-left: 0.2em solid grey;
 }
 
 div.experience h3 {
+    padding-left: 0em;
+}
+
+div.experience h3, div.experience h4 {
     font-weight: bold;
 }
 
