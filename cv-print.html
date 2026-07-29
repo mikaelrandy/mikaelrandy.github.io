@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mikael Randy — Director of Engineering</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --blue: #163A5F;
+    --ink: #1B1F24;      /* dark grey — headings */
+    --body: #3C424A;     /* dark grey — body */
+    --muted: #838A92;    /* light grey — secondary text */
+    --line: #E7E9EC;     /* light grey — hairlines */
+    --card: #F6F7F9;     /* light grey — surfaces */
+    --chip: #F0F2F4;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--body);
+    background: #e9eaec;
+    font-weight: 300;
+    line-height: 1.55;
+  }
+
+  /* ---------- Page frame ---------- */
+  .page {
+    position: relative;
+    width: 210mm;
+    min-height: 297mm;
+    background: #fff;
+    margin: 22px auto;
+    padding: 17mm 16mm;
+    box-shadow: 0 12px 44px rgba(20, 30, 45, 0.14);
+    display: flex;
+    flex-direction: column;
+  }
+  .page--one { break-after: page; page-break-after: always; }
+
+  /* ---------- Eyebrow labels ---------- */
+  .eyebrow {
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 9px;
+  }
+
+  /* ---------- Page 1: masthead ---------- */
+  .masthead {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 14mm;
+    padding-bottom: 7mm;
+    border-bottom: 1px solid var(--line);
+  }
+  .identity { padding-top: 2mm; }
+  .name {
+    font-size: 55px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 0.98;
+    color: var(--ink);
+  }
+  .role {
+    margin-top: 10px;
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--blue);
+    letter-spacing: -0.01em;
+  }
+  .subtitle {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--muted);
+  }
+  .pills { margin-top: 16px; display: flex; gap: 8px; }
+  .pill {
+    font-size: 11.5px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    color: var(--blue);
+    border: 1px solid #D5DBE1;
+    border-radius: 999px;
+    padding: 5px 13px;
+    white-space: nowrap;
+  }
+
+  /* stat widgets */
+  .widgets {
+    flex: 0 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 40mm);
+    grid-auto-rows: 24mm;
+    gap: 8px;
+  }
+  .widget {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 13px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .widget__num {
+    font-size: 33px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: var(--blue);
+    line-height: 1;
+  }
+  .widget__num.is-text { font-size: 21px; letter-spacing: -0.02em; }
+  .widget__label {
+    margin-top: 7px;
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  /* ---------- Page 1: about ---------- */
+  .about { margin-top: 7mm; }
+  .about p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.62;
+    color: var(--body);
+    max-width: 165mm;
+  }
+  .about strong { font-weight: 600; color: var(--ink); }
+
+  /* ---------- Page 1: philosophy ---------- */
+  .philosophy {
+    margin-top: 7mm;
+    padding: 6mm 0 6mm 9mm;
+    border-left: 3px solid var(--blue);
+  }
+  .philosophy blockquote {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 1.3;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+    max-width: 150mm;
+  }
+  .philosophy .support {
+    margin-top: 12px;
+    font-size: 13.5px;
+    font-weight: 300;
+    color: var(--muted);
+    max-width: 140mm;
+  }
+
+  /* ---------- Page 1: snapshot ---------- */
+  .snapshot { margin-top: auto; padding-top: 7mm; }
+  .snap-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 9px;
+  }
+  .snap {
+    background: var(--card);
+    border-radius: 13px;
+    padding: 13px 15px;
+    min-height: 16mm;
+    display: flex;
+    align-items: center;
+  }
+  .snap span {
+    font-size: 14.5px;
+    font-weight: 500;
+    color: var(--ink);
+    line-height: 1.3;
+  }
+
+  /* ---------- Page 2: experience ---------- */
+  .story-head { margin-bottom: 8mm; }
+  .story-head h2 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: var(--ink);
+    line-height: 1.05;
+  }
+  .story-head p {
+    margin-top: 9px;
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--muted);
+    max-width: 150mm;
+  }
+
+  .timeline { position: relative; padding-left: 34mm; }
+  .timeline::before {
+    content: "";
+    position: absolute;
+    left: 34mm;
+    top: 4px;
+    bottom: 6px;
+    width: 1px;
+    background: var(--line);
+  }
+  .entry { position: relative; padding: 0 0 6.5mm 12mm; break-inside: avoid; }
+  .entry:last-child { padding-bottom: 0; }
+  .entry__year {
+    position: absolute;
+    left: -34mm;
+    top: -2px;
+    width: 28mm;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    text-align: left;
+  }
+  .entry__year small {
+    display: block;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--muted);
+    letter-spacing: 0;
+    margin-top: 2px;
+  }
+  .entry::before {
+    content: "";
+    position: absolute;
+    left: -6.5px;
+    top: 5px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2.5px solid var(--blue);
+  }
+  .entry--muted::before { border-color: #C3CAD2; }
+  .entry__role {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+  .entry__co {
+    margin-top: 2px;
+    font-size: 12.5px;
+    font-weight: 500;
+    color: var(--blue);
+  }
+  .entry__sum {
+    margin-top: 9px;
+    font-size: 13.5px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: var(--body);
+    max-width: 150mm;
+  }
+  .entry__meta {
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--muted);
+    max-width: 150mm;
+  }
+
+  /* strategic missions */
+  .missions {
+    position: relative;
+    padding-left: 34mm;
+    margin-top: 3mm;
+  }
+  .missions .eyebrow { margin-bottom: 10px; padding-left: 12mm; }
+  .missions__grid {
+    padding-left: 12mm;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .mission {
+    background: var(--card);
+    border-radius: 13px;
+    padding: 14px 16px;
+    break-inside: avoid;
+  }
+  .mission__year { font-size: 12px; font-weight: 600; color: var(--muted); }
+  .mission__role { margin-top: 3px; font-size: 14.5px; font-weight: 600; color: var(--ink); letter-spacing: -0.01em; }
+  .mission__co { font-size: 12px; font-weight: 500; color: var(--blue); margin-top: 1px; }
+  .mission__sum { margin-top: 8px; font-size: 12px; font-weight: 300; line-height: 1.55; color: var(--body); }
+
+  /* ---------- Page 2: footer ---------- */
+  .footer { margin-top: auto; padding-top: 11mm; }
+  .footer__cols { display: flex; gap: 16mm; }
+  .footer__col { flex: 1; }
+  .footer__col .eyebrow { margin-bottom: 11px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 7px; }
+  .tag {
+    font-size: 11.5px;
+    font-weight: 500;
+    color: #4B525A;
+    background: var(--chip);
+    border-radius: 7px;
+    padding: 5px 11px;
+  }
+  .tag--soft { background: transparent; border: 1px solid var(--line); color: var(--ink); }
+
+  /* ---------- Print toolbar (screen only) ---------- */
+  .print-bar {
+    position: fixed;
+    top: 18px; right: 18px;
+    z-index: 50;
+  }
+  .print-bar button {
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    background: var(--blue);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 18px;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(22, 58, 95, 0.35);
+  }
+
+  /* ---------- Print rules ---------- */
+  @page { size: A4; margin: 0; }
+  @media print {
+    html, body { background: #fff; width: 210mm; }
+    .print-bar { display: none; }
+    .page {
+      margin: 0;
+      padding: 14mm 16mm;
+      box-shadow: none;
+      height: 297mm;         /* exactly one A4 sheet */
+      min-height: 0;
+      overflow: hidden;      /* backstop against a spill-over 3rd page */
+    }
+    .page--one { page-break-after: always; }
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+
+<div class="print-bar"><button onclick="window.print()">Print / Save as PDF</button></div>
+
+<!-- ============================ PAGE 1 ============================ -->
+<section class="page page--one">
+
+  <header class="masthead">
+    <div class="identity">
+      <div class="name">Mikael<br />Randy</div>
+      <div class="role">Director of Engineering</div>
+      <div class="subtitle">Building high-performing engineering organizations.</div>
+      <div class="pills">
+        <span class="pill">CTO</span>
+        <span class="pill">VP Engineering</span>
+        <span class="pill">Director of Engineering</span>
+      </div>
+    </div>
+
+    <div class="widgets">
+      <div class="widget"><div class="widget__num">75</div><div class="widget__label">People</div></div>
+      <div class="widget"><div class="widget__num">5</div><div class="widget__label">Squads</div></div>
+      <div class="widget"><div class="widget__num">20+</div><div class="widget__label">Years</div></div>
+      <div class="widget"><div class="widget__num is-text">VP Product</div><div class="widget__label">Partner</div></div>
+    </div>
+  </header>
+
+  <div class="about">
+    <div class="eyebrow">About</div>
+    <p>Engineering leader with more than <strong>20 years</strong> in software engineering, architecture and engineering leadership. I have grown from software developer to <strong>Domain Engineering Director</strong>, building large-scale streaming platforms used by millions and developing the leaders around me. I believe the best products emerge when business, product and engineering share a single vision — and my role is to build organizations where people are empowered to do their best work.</p>
+  </div>
+
+  <div class="philosophy">
+    <div class="eyebrow">Leadership Philosophy</div>
+    <blockquote>Technology is a means to build great products — not an end in itself.</blockquote>
+    <div class="support">Great engineering happens when teams understand the purpose of their work, trust each other and continuously improve.</div>
+  </div>
+
+  <div class="snapshot">
+    <div class="eyebrow">Executive Snapshot</div>
+    <div class="snap-grid">
+      <div class="snap"><span>75-person organization</span></div>
+      <div class="snap"><span>International leadership</span></div>
+      <div class="snap"><span>Manager of Managers</span></div>
+      <div class="snap"><span>Streaming at scale</span></div>
+      <div class="snap"><span>Business × Product × Engineering</span></div>
+      <div class="snap"><span>Engineering Strategy</span></div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ============================ PAGE 2 ============================ -->
+<section class="page page--two">
+
+  <div class="story-head">
+    <div class="eyebrow">Experience</div>
+    <h2>From engineer to engineering leader.</h2>
+    <p>Fifteen years within the same organization — M6 Web, then Bedrock Streaming — growing from Lead Developer to Domain Engineering Director.</p>
+  </div>
+
+  <div class="timeline">
+
+    <div class="entry">
+      <div class="entry__year">2026<small>Present</small></div>
+      <div class="entry__role">Domain Engineering Director — Content Discovery</div>
+      <div class="entry__co">Bedrock Streaming</div>
+      <div class="entry__sum">Leading the engineering strategy and execution of the Content Discovery domain, in close partnership with the VP Product.</div>
+      <div class="entry__meta">5 cross-functional squads · ~75 people · Engineering Managers, Principal Engineer, Backend, Frontend, QA &amp; Data.</div>
+    </div>
+
+    <div class="entry">
+      <div class="entry__year">2022<small>– 2026</small></div>
+      <div class="entry__role">Service Manager</div>
+      <div class="entry__co">Bedrock Streaming</div>
+      <div class="entry__sum">Ran an engineering organization of four teams — up to 50 engineers — across subscription, payments, user management and catalog exposure.</div>
+      <div class="entry__meta">Manager of Engineering Managers &amp; Tech Leads · International hiring across France, Portugal &amp; Germany.</div>
+    </div>
+
+    <div class="entry">
+      <div class="entry__year">2018<small>– 2022</small></div>
+      <div class="entry__role">Team Leader</div>
+      <div class="entry__co">Bedrock Streaming</div>
+      <div class="entry__sum">Led the backend team owning subscription and entitlement services — architecture, coaching, hiring and delivery.</div>
+    </div>
+
+    <div class="entry">
+      <div class="entry__year">2013<small>– 2018</small></div>
+      <div class="entry__role">Lead Developer</div>
+      <div class="entry__co">M6 Web → Bedrock</div>
+      <div class="entry__sum">Technical lead for the M6 Replay and 6play backends. Drove the move from a monolith to specialized microservices under heavy traffic.</div>
+    </div>
+
+  </div>
+
+  <div class="missions">
+    <div class="eyebrow">Strategic Missions</div>
+    <div class="missions__grid">
+      <div class="mission">
+        <div class="mission__year">2016 – 2017</div>
+        <div class="mission__role">Software Architect</div>
+        <div class="mission__co">Québecor Média · Montréal</div>
+        <div class="mission__sum">One-year sabbatical. Architecture and technical lead for a ~15-person team on the group's digital magazine platform.</div>
+      </div>
+      <div class="mission">
+        <div class="mission__year">2017 – 2018</div>
+        <div class="mission__role">CTO (on secondment)</div>
+        <div class="mission__co">Elephorm</div>
+        <div class="mission__sum">On delegation from Bedrock. Led the technical transformation of the company ahead of a planned acquisition.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer__cols">
+      <div class="footer__col">
+        <div class="eyebrow">Community</div>
+        <div class="tags">
+          <span class="tag tag--soft">AFUP — President 2024</span>
+          <span class="tag tag--soft">Conference Speaker</span>
+          <span class="tag tag--soft">Technical Writer</span>
+        </div>
+      </div>
+      <div class="footer__col">
+        <div class="eyebrow">Technologies</div>
+        <div class="tags">
+          <span class="tag">PHP</span>
+          <span class="tag">Symfony</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Kubernetes</span>
+          <span class="tag">AWS</span>
+          <span class="tag">Redis</span>
+          <span class="tag">RabbitMQ</span>
+          <span class="tag">Elasticsearch</span>
+          <span class="tag">CI/CD</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+</body>
+</html>
