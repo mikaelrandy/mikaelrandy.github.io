@@ -1,6 +1,113 @@
 h1.title {
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 0.2em;
+}
+
+/**
+ * CV header
+ */
+header.cv-header {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+header.cv-header .cv-role {
+    font-size: 130%;
+    font-weight: bold;
+    margin: 0.2em 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+header.cv-header .cv-positioning {
+    font-style: italic;
+    margin: 0.2em 0;
+}
+
+header.cv-header .cv-tagline {
+    margin: 0.4em 0;
+}
+
+header.cv-header .cv-contact {
+    font-size: 90%;
+    margin-top: 0.8em;
+    line-height: 1.6;
+}
+
+p.section-intro {
+    font-style: italic;
+    margin-bottom: 1.5em;
+}
+
+/**
+ * Executive snapshot
+ */
+ul.snapshot {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul.snapshot li {
+    flex: 1 1 45%;
+    padding: 0.2em 0.5em;
+    box-sizing: border-box;
+}
+
+ul.snapshot li:before {
+    content: "\2022";
+    margin-right: 0.5em;
+    font-weight: bold;
+}
+
+/**
+ * Quotes (philosophy / personal brand)
+ */
+.cv-philosophy blockquote,
+.cv-brand blockquote {
+    margin: 1em 0;
+    padding-left: 1em;
+    border-left: 0.2em solid grey;
+    font-style: italic;
+}
+
+/**
+ * Company sub-note (e.g. "formerly M6 Web")
+ */
+.enterprise-note {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 70%;
+}
+
+/**
+ * Technical expertise
+ */
+div.expertise-group {
+    margin-bottom: 1.5em;
+}
+
+div.expertise-group h3 {
+    padding-left: 1em;
+    font-size: 120%;
+    margin-bottom: 0.4em;
+}
+
+ul.tags {
+    list-style: none;
+    padding-left: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+ul.tags li {
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 0.2em 0.6em;
+    font-size: 90%;
 }
 
 h2 {
