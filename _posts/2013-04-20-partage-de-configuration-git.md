@@ -15,4 +15,4 @@ Jusqu'à ce jour, j'avais trouvé une solution pour [beaucoup de mes outils](htt
 J'ai découvert récemment qu'il était possible d'inclure une fichier dans le fichier `.gitconfig`, et la solution est donc apparue.  
 J'ai finalement placé les éléments partageables dans une [fichier spécifique](https://github.com/mikaelrandy/Save/blob/master/Git/.gitconfig) que je versionne, et dans mon fichier `~/.gitconfig`, il me suffit de placer le code suivant :  
 
-{% gist mikaelrandy/dda36c9e2f0dce6eff4e %}
+<script src="https://gist.github.com/mikaelrandy/dda36c9e2f0dce6eff4e.js"></script>

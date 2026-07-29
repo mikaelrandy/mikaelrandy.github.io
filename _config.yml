@@ -3,7 +3,6 @@ title: Mikael Randy
 description: 'CTO - Architecte Web'
 url: 'https://www.mikaelrandy.fr'
 baseurl: '/'
-google_analytics: 'UA-15210241-1'
 disqus_shortname: 'mikaelrandy'
 
 author:
@@ -36,7 +35,6 @@ kramdown:
 
 plugins:
   - jekyll-paginate
-  - jekyll-gist
   - jekyll-sitemap
 
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png', '.idea']
